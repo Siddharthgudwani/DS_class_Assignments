@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.transitions.css">
+    <title>Sports Complex</title>
+  </head>
+  <body>
+    <header>
+    <nav>
+      <section>
+        <h1><span style="color: yellow">RJP SC</span></h1>
+      </section>
+        <ul id="nav">
+           <li><a class="homered" href="main.html">HOME</a></li>
+            <li><a class="homeblack" href="#facilities">FACILITIES</a></li>
+            <li><a class="homeblack" href="#testimonials">TESTIMONIALS</a></li>
+            <li><a class="homeblack" href="#contact">CONTACT</a></li>
+        </ul>
+          </nav>
+    </header>
+
+
+      <div class="divider"></div>
+    <div class="image1">
+       <h2 class="intro">WELCOME TO THE <span style="color: yellow">Rajpura SPORTS COMPLEX.</span></h2>
+        <br>
+        
+    </div>
+      <div class="facilities" id="facilities">
+        <h1>FACILITIES</h1>
+      </div>
+    <div class="image2">
+        <div class="indoor">
+          <h2 ><span style="color: yellow">INDOOR</span></h2>
+
+  <ul id="rig">
+    <li>
+        <a class="rig-cell" >
+            <img class="rig-img" src="images/chess.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Chess</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" >
+            <img class="rig-img" src="images/badminton.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Badminton</span>
+        </a>
+    </li>
+    <li>
+        <a class="rig-cell" >
+            <img class="rig-img" src="images/carrom.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">Carrom</span>
+        </a>
+    </li>
+
+</ul>
+
+        </div>
+        <div class="outdoor">
+            <h2><span style="color: yellow">OUTDOOR</span></h2>
+            <ul id="rig">
+              <li>
+                  <a class="rig-cell" >
+                      <img class="rig-img" src="images/dhoni.jpg">
+                      <span class="rig-overlay"></span>
+                      <span class="rig-text">Cricket</span>
+                  </a>
+              </li>
+              <li>
+                  <a class="rig-cell" >
+                      <img class="rig-img" src="images/football.jpg">
+                      <span class="rig-overlay"></span>
+                      <span class="rig-text">Football</span>
+                  </a>
+              </li>
+              <li>
+                  <a class="rig-cell" >
+                      <img class="rig-img" src="images/hockey.jpg">
+                      <span class="rig-overlay"></span>
+                      <span class="rig-text">Hockey</span>
+                  </a>
+              </li>
+
+          </ul>
+        </div>
+
+    </div>
+    <div class="testimonials" id="testimonials">
+      <h1 style="text-color:white;">CUSTOMER TESTIMONIALS</h1>
+    </div>
+
+   <div class="demo">
+<div class="container">
+  <div class="row">
+      <div class="col-md-8">
+          <div id="testimonial-slider" class="owl-carousel">
+              <div class="testimonial">
+                  <div class="pic">
+                      <img src="images/goku.jpg">
+                  </div>
+                  <h3 class="title">Williamson</h3>
+                  <span class="post">Web Developer</span>
+                  <p class="description">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia, omnis perferendis placeat sit vitae, consectetur adipisicing elit ipsam.
+                  </p>
+              </div>
+              <div class="testimonial">
+                  <div class="pic">
+                      <img src="images/girl.jpg">
+                  </div>
+                  <h3 class="title">Kristina</h3>
+                  <span class="post">Web Designer</span>
+                  <p class="description">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium ad asperiores at atque culpa dolores eaque fugiat hic illo ipsam ipsum minima modi necessitatibus nemo officia, omnis perferendis placeat sit vitae, consectetur adipisicing elit ipsam.
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#testimonial-slider").owlCarousel({
+      items:1,
+      itemsDesktop:[1000,1],
+      itemsDesktopSmall:[979,1],
+      itemsTablet:[768,1],
+      pagination:true,
+      transitionStyle:"backSlide",
+      autoPlay:true
+  });
+});
+</script>
+
+
+    <div class="facilities" id="contact">
+      <h1>CONTACT US</h1>
+    </div>
+
+
+    <form>
+      <input name="name" type="text" class="feedback-input" placeholder="Name" />
+      <input name="email" type="text" class="feedback-input" placeholder="Email" />
+      <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
+      <input type="submit" value="SUBMIT"/>
+    </form>
+
+
+
+
+  </body>
+</html>
