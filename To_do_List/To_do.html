@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style>
+  body{
+    background-color: black;
+  }
+  ul{
+     color: rgb(35, 190, 178);
+  }
+  ul li {
+  list-style-type: none;
+  font-size: 18px;}
+
+  
+  #submit-button {
+ 
+  background: #030303;
+  color: rgb(216, 140, 27);
+  
+}
+#text-box{
+  background: #030303;
+  color: rgb(35, 190, 178);
+  
+}
+ 
+   h2{
+    color: rgb(216, 140, 27);
+   }
+  
+  </style>
+  <body>
+    <input id='text-box'type="text" name="" value="" placeholder="Thing to do">
+
+    <input id='submit-button'type="button" name="" value="   ADD to the List    ">
+    <hr>
+    <h2 style="margin:5px">Things To Do !!</h2>
+    <div id='para'>
+      <ul id="myUL">
+        
+      </ul>
+    </div>
+    <script>
+       var e1 = document.getElementById('submit-button')
+      e1.addEventListener('click',textclick)
+    
+      function textclick(){
+  
+  var li = document.createElement("li");
+  var inputValue = document.getElementById("text-box").value;
+  var t = document.createTextNode(inputValue);
+  li.appendChild(t);
+ 
+    document.getElementById("myUL").appendChild(li);
+  
+  document.getElementById("text-box").value = "";
+
+       
+
+      }
+    </script>
+  </body>
+</html>
